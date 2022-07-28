@@ -28,3 +28,8 @@
     line-height: 31px;
     text-transform: uppercase;
 }
+@media screen and (max-width: 600px) {
+    .banner{
+     background: url(../img/bg.png) no-repeat center/cover;   
+    }
+}
