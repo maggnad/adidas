@@ -1,6 +1,6 @@
 .header {
     background: white;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .header__wrap {
@@ -75,22 +75,66 @@ input.form__text::placeholder {
     border: 1px solid black;
 }
 
+.menu__btn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header__wrap {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        display: none;
+        overflow: hidden;
+        transition: 0.3s;
+        gap: 30px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu__link {
+        padding: 0;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__btn {
+        display: block;
+        font-size: 30px;
+        transition: 0.3s;
+        background: none;
+        border: none;
+    }
+
+    .menu__btn.active {
+        transform: rotateZ(180deg);
+    }
+
+    .menu__link.active {
+        border: none;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    .header__wrap{
+    .header__wrap {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 30px;
     }
 }
-@media screen and (max-width: 600px) {
-    .header__wrap{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
+
+@media screen and (max-width: 320px) {
+    .header__wrap {
+        display: flex;
     }
-    .menu__link.active{
-        border: none;
-    }
-    }
+
+}
