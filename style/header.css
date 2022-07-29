@@ -82,7 +82,11 @@ input.form__text::placeholder {
 @media screen and (max-width: 768px) {
     .header__wrap {
         flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
     }
+
 
     .menu {
         display: none;

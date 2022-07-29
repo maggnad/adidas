@@ -24,14 +24,14 @@
     color: var(--b);
 }
 
-@media screen and (max-width: 320px){
-    .list__item{
+@media screen and (max-width: 320px) {
+    .list__item {
         flex: 0 0 50%;
     }
 }
+
 @media screen and (max-width: 582px) {
     .list__item {
         flex: 0 0 40%;
-        padding-left: 60px;
     }
 }

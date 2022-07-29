@@ -26,31 +26,27 @@ a.card__body {
     background: #6B4B6B;
 }
 
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 991px) {
     .cards__wrap {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 30px;
-        margin-top: 40px;
-        padding: 0 15px;
     }
 
     .card {
-        flex: 0 0 100%;
-        min-width: 100%;
+        flex: 0 0 50%;
     }
 }
 
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 576px) {
     .cards__wrap {
         flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 30px;
-        margin-top: 40px;
-        padding: 0 15px;
     }
+
     .card {
         flex: 0 0 100%;
         min-width: 100%;
